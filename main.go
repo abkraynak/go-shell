@@ -15,11 +15,11 @@ func main() {
 		fmt.Print(">> ")
 		scanner.Scan()
 		line := scanner.Text()
-		exec_cmd(line)
+		execCmd(line)
 	}
 }
 
-func exec_cmd(in string) error {
+func execCmd(in string) (error) {
 	// remove newline and separate string
 	in = strings.TrimSuffix(in, "\n")
 	args := strings.Split(in, " ")
