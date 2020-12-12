@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"log"
 	"strings"
@@ -9,10 +10,11 @@ import (
 )
 
 func main() {
+	scanner := bufio.NewScanner(os.Stdin)
 	for {
-		var line string
 		fmt.Print(">> ")
-		fmt.Scanln(&line)
+		scanner.Scan()
+		line := scanner.Text()
 		exec_cmd(line)
 	}
 }
