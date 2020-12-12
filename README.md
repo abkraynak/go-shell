@@ -15,7 +15,7 @@ This project is similar to the shell program I previously wrote in C. I wanted t
 as an exercise to practice using the language and use these packages and functions. However, I still intend
 for this shell to work smoothly and be comparable to other shells.
 ***
-Usage and Examples
+## Usage and Examples
 This shell is used the same way as any other standard shell.
 ````
 >> ls
@@ -36,5 +36,5 @@ Enter "exit" to end the shell.
 ***
 ## Future Improvements
 Some improvements I would like to make to this program is to create custom implementations of some commands,
-like `<ls>` and `<set>`. I would also make a few more changes to get every command to work, for example the `<cd>`
+like `ls` and `set`. I would also make a few more changes to get every command to work, for example the `cd`
 needs a little more work to run correctly.
