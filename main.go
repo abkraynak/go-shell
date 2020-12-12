@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"strings"
 	"os"
 	"os/exec"
@@ -30,5 +31,10 @@ func exec_cmd(in string) error {
 	cmd.Stderr = os.Stderr
 	cmd.Stdout = os.Stdout
 
-	return cmd.Run()
+	if err := cmd.Run(); err != nil {
+		log.Fatal(err)
+		return err		
+	}
+	return nil
 }
+
